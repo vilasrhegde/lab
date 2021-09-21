@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="withdevice-width initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+ <script src="https://kit.fontawesome.com/2d3dc5d61d.js" crossorigin="anonymous"></script>
+        <title>Experiments</title>
+
+    </head>
+
+<body onclick="hidedrop()">
+  <div class="container">
+        <section id="page1" ondrag="widthcng(this.id)"   title="Just Watch it!"  ondblclick="myfunction()" class="background">
+            <h1 >Hi,Everyone!</h1>
+            <img src="./images/moon.png" id="icon" onclick="myfunction()" >
+        </section>
+        <script>
+            function myfunction() {
+               var element = document.body;
+               element.classList.toggle("dark-theme");
+               
+            }
+
+            function widthcng(x){
+              document.getElementById(x).style.background="white";
+            }
+            </script>
+
+        <section>
+
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F2AePm1m8Jli5rman4cthD0%2Fhomebtn%3Fpage-id%3D0%253A1%26node-id%3D16%253A51%26scaling%3Dscale-down" allowfullscreen></iframe>
+
+</section>
+
+<section>
+
+<label style="color: white;" for="cars">Choose a car:</label>
+
+<select  style="width: 70px;height:50px;font-weight: 900;"  id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Tesla</option>
+  <option value="vw">BMW</option>
+  <option value="audi" selected>Audi</option>
+</select>
+
+</section>
+
+<section id="imgcng">
+
+<h1>The picture element</h1>
+
+<p>Resize the browser window to load different images.</p>
+
+<picture>
+  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+</section>
+
+
+<section id="map">
+
+<h1>The map and area elements</h1>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="./images/moon.png" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+</section>
+
+
+
+<section id="php">
+<h1>The button value attribute</h1>
+
+<form action="/action_page.php" method="get">
+Choose your favorite subject:
+<button name="subject" type="submit" value="fav_HTML">HTML</button>
+<button name="subject" type="submit" value="fav_CSS">CSS</button>
+</form>
+</section>
+
+
+<section id="form">
+<h1>The input value attribute</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="John"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</section>
+
+
+<section id="progress">
+<h1>The meter high, low, max, min, and value attributes</h1>
+
+<p><label for="anna">Anna's score:</label>
+<meter id="anna" min="0" low="40" high="90" max="100" value="95"></meter></p>
+
+<p><label for="peter">Peter's score:</label>
+<meter id="peter" min="0" low="40" high="90" max="100" value="65"></meter></p>
+
+<p><label for="linda">Linda's score:</label>
+<meter id="linda" min="0" low="40" high="90" max="100" value="20"></meter></p>
+<!------
+<p>The high attribute specifies the range where the gauge's value is considered to be a high value.</p>
+<p>The low attribute specifies the range where the gauge's value is considered to be a low value.</p>
+<p>The max attribute specifies the upper bound of the gauge.</p>
+<p>The min attribute specifies the lower bound of the gauge.</p>
+<p>The value attribute specifies the current value of the gauge.</p>
+---->
+</section>
+
+
+
+<section id="server">
+<h1>The option value attribute</h1>
+
+<form action="/action_page.php">
+<label for="cars">Choose a car:</label>
+
+<select id="cars" name="cars">
+  <option value="volvo">Volvo XC90</option>
+  <option value="saab">Saab 95</option>
+  <option value="mercedes">Mercedes SLK</option>
+  <option value="audi">Audi TT</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+
+<p>Choose a car, and click the "Submit" button to send input to the server.</p>
+</section>
+
+
+
+<section>
+<h1>The progress element</h1>
+<center>
+<div>
+
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="52" max="100"> 32% </progress>
+
+
+</div>
+</center>
+</section>
+
+<section>
+<h1>The param element</h1>
+
+<object data="horse.wav">
+<param name="autoplay" value="true">
+</object>
+</section>
+
+<section>
+    <div class="dropdown">
+      <button onmouseenter="myFunction()" onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="#page1">Land</a>
+        <a href="#cars">Dropdown</a>
+        <a href="#imgcng">Img Changer</a>
+        <a href="#map">Map area</a>
+        <a href="#php">Choose</a>
+        <a href="#form">Form filling</a>
+        <a href="#progress">Progress bar</a>
+        <a href="#server">Server</a>
+      </div>
+    </div>
+    
+    <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function hidedrop() {
+      document.getElementById("myDropdown").classList.toggle("hide");
+    }
+    
+    function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+    
+</section>
+
+
+</div>
+
+</body>
+</html>
+
